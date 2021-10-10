@@ -1,3 +1,4 @@
+package employee.management.system.pojo;
 
 import java.util.UUID;
 
@@ -5,59 +6,70 @@ import employee.management.system.enums.BloodGroup;
 import employee.management.system.enums.Gender;
 
 public class Person {
-	String name;
-	int age;
-	UUID adharId;
-	Address address;
-	BloodGroup bloodGroup;
-	Gender gender;
+	private String name;
+	private int age;
+	private UUID adharId;
+	private Address address;
+	private BloodGroup bloodgroup;
+	private Gender gender;
 
-	void setName(String name) {
+	public Person() {
+		System.out.println("Default constructor");
+
+	}
+	public Person(String name,int age)
+	{
+		this.name=name;
+		this.age=age;
+	}
+
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	String getName() {
+	public String getName() {
 		return name;
 	}
 
-	void setAge(int age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
-	int getAge() {
+	public int getAge() {
 		return age;
 	}
 
-	void setAdharId(UUID adharId) {
+	public void setAdharId(UUID adharId) {
 		this.adharId = adharId;
 
 	}
 
-	UUID getAdharId() {
+	public UUID getAdharId() {
 		return adharId;
 	}
 
-	void setAddress(Address address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 
-	Address getAddress() {
+	public Address getAddress() {
 		return address;
 	}
 
-	void setBloodGroup(BloodGroup BloodGroup) {
-		this.bloodGroup = bloodGroup;
+	public void setBloodGroup(BloodGroup bloodgroup) {
+		this.bloodgroup = bloodgroup;
 	}
 
 	BloodGroup getBloodGroup() {
-		return bloodGroup;
+		return bloodgroup;
 	}
 
-	void setGender(Gender Gender) {
-		this.gender = Gender;
+	public void setGender(Gender gender) {
+		this.gender = gender;
 	}
 
 	Gender getGender() {
 		return gender;
 	}
+
 }

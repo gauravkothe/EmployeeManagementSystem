@@ -1,58 +1,58 @@
 package employee.management.system.pojo;
 
 public class Address {
-	int pin;
-	String city;
-	String area;
-	String landmark;
-	String state;
-	String country;
+	private int pin;
+	private String city;
+	private String area;
+	private String landmark;
+	private String state;
+	private String country;
 
-	void setPin(int pin) {
+	public void setPin(int pin) {
 		this.pin = pin;
 	}
 
-	int getPin() {
+	public int getPin() {
 		return pin;
 	}
 
-	void setCity(String city) {
+	public void setCity(String city) {
 		this.city = city;
 	}
 
-	String getCity() {
+	public String getCity() {
 		return city;
 	}
 
-	void setArea(String area) {
+	public void setArea(String area) {
 		this.area = area;
 	}
 
-	String getArea() {
+	public String getArea() {
 		return area;
 	}
 
-	void setLandmark(String landmark) {
+	public void setLandmark(String landmark) {
 		this.landmark = landmark;
 	}
 
-	String getLandmark() {
+	public String getLandmark() {
 		return landmark;
 	}
 
-	void setState(String state) {
+	public void setState(String state) {
 		this.state = state;
 	}
 
-	String getState() {
+	public String getState() {
 		return state;
 	}
 
-	void setCountry(String country) {
+	public void setCountry(String country) {
 		this.country = country;
 	}
 
-	String getCountry() {
+	public String getCountry() {
 		return country;
 
 	}
