@@ -17,10 +17,19 @@ public class Person {
 		System.out.println("Default constructor");
 
 	}
-	public Person(String name,int age)
-	{
-		this.name=name;
-		this.age=age;
+
+	public Person(String name, int age, UUID adharId, Address address, BloodGroup bloodgroup, Gender gender) {
+		this.name = name;
+		this.age = age;
+		this.adharId = adharId;
+		this.address = address;
+		this.bloodgroup = bloodgroup;
+		this.gender = gender;
+	}
+
+	public String toString() {
+		return "Person [name=" + name + ",age=" + age + "Adhar id=" + adharId + "Address=" + address + "bloodgroup="
+				+ bloodgroup + "gender=" + gender + "]";
 	}
 
 	public void setName(String name) {

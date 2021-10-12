@@ -4,6 +4,15 @@ public class CompanyLocation {
 	private Address address;
 	private int numberofemployees;
 
+	public CompanyLocation(Address address, int numberofemployee) {
+		this.address = address;
+		this.numberofemployees = numberofemployee;
+	}
+
+	public String toString() {
+		return "Company[address=" + address + "numberofemployees=" + numberofemployees + "]";
+	}
+
 	public Address getAddress() {
 		return address;
 	}

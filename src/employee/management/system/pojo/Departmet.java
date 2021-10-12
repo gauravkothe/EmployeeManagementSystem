@@ -7,6 +7,16 @@ public class Departmet {
 	private int numberofemployee;
 	private String name;
 
+	public Departmet(UUID id, int numberofemployee, String name) {
+		this.id = id;
+		this.numberofemployee = numberofemployee;
+		this.name = name;
+	}
+
+	public String toString() {
+		return "Person[id=" + id + "numberofemployee=" + numberofemployee + "name=" + name + "]";
+	}
+
 	public UUID getId() {
 		return id;
 	}

@@ -8,6 +8,21 @@ public class Address {
 	private String state;
 	private String country;
 
+	public Address(int pin, String city, String area, String landmark, String state, String country) {
+		this.pin = pin;
+		this.city = city;
+		this.area = area;
+		this.landmark = landmark;
+		this.state = state;
+		this.country = country;
+	}
+
+	public String toString() {
+		return "Company[pin=" + pin + "city=" + city + "area=" + area + "landmark=" + landmark + "state=" + state
+				+ "country=" + country + "]";
+
+	}
+
 	public void setPin(int pin) {
 		this.pin = pin;
 	}
