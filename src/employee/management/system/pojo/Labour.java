@@ -1,4 +1,4 @@
-package employee.management.system.pojo;
+ package employee.management.system.pojo;
 
 import java.util.UUID;
 
@@ -19,11 +19,6 @@ public class Labour extends Person {
 		this.department = department;
 		this.companylocation = companylocation;
 		this.labourId = labourId;
-	}
-
-	public String toString() {
-		return "Labour[perdaterate=" + perdayrate + "department=" + department + "companylocation=" + companylocation
-				+ "labourId=" + labourId + "]";
 	}
 
 	public int getPerdayrate() {
@@ -58,4 +53,8 @@ public class Labour extends Person {
 		return labourId;
 	}
 
+	public String toString() {
+		return "Labour[perdaterate   =" + perdayrate + "department   = " + department + "companylocation  ="
+				+ companylocation + "labourId=    " + labourId + "]";
+	}
 }

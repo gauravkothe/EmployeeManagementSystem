@@ -1,4 +1,4 @@
-package employee.management.system.pojo;
+   package employee.management.system.pojo;
 
 import java.util.UUID;
 
@@ -27,11 +27,6 @@ public class Person {
 		this.gender = gender;
 	}
 
-	public String toString() {
-		return "Person [name=" + name + ",age=" + age + "Adhar id=" + adharId + "Address=" + address + "bloodgroup="
-				+ bloodgroup + "gender=" + gender + "]";
-	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -39,11 +34,11 @@ public class Person {
 	public String getName() {
 		return name;
 	}
-
+ 
 	public void setAge(int age) {
-		this.age = age;
+		this.age = age; 
 	}
-
+ 
 	public int getAge() {
 		return age;
 	}
@@ -79,6 +74,11 @@ public class Person {
 
 	Gender getGender() {
 		return gender;
+	}
+
+	public String toString() {
+		return "Person [name=" + name + ",age=" + age + "Adhar id=" + adharId + "Address=" + address + "bloodgroup="
+				+ bloodgroup + "gender=" + gender + "]";
 	}
 
 }

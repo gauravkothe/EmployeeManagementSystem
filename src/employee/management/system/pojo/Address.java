@@ -1,9 +1,9 @@
-package employee.management.system.pojo;
+ package employee.management.system.pojo;
 
 public class Address {
 	private int pin;
 	private String city;
-	private String area;
+	private String area; 
 	private String landmark;
 	private String state;
 	private String country;

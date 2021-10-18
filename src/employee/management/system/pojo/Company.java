@@ -1,15 +1,15 @@
-package employee.management.system.pojo;
+  package employee.management.system.pojo;
 
 import java.util.ArrayList;
 
 public class Company {
-	private int name;
+	private String name;
 	private String availablelocation;
 	private String foundername;
 	private ArrayList<Employee> employees;
 	private ArrayList<Labour> labours;
 
-	public Company(int name, String availablelocation, String foundername, ArrayList<Employee> employees,
+	public Company(String name, String availablelocation, String foundername, ArrayList<Employee> employees,
 			ArrayList<Labour> labours) {
 		this.name = name;
 		this.availablelocation = availablelocation;
@@ -18,11 +18,11 @@ public class Company {
 		this.setLabours(labours);
 	}
 
-	public int getName() {
+	public String getName() {
 		return name;
-	}
+	} 
 
-	public void setName(int name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -33,7 +33,7 @@ public class Company {
 	public void setAvailablelocation(String availablelocation) {
 		this.availablelocation = availablelocation;
 	}
-
+ 
 	public String getFoundername() {
 		return foundername;
 	}
@@ -59,7 +59,8 @@ public class Company {
 	}
 
 	public String toString() {
-		return "Company[name=" + name + "availablelocation=" + availablelocation + "foundername=" + foundername + "]";
+		return "Company[name   = " + name + "   availablelocation=" + availablelocation + "     foundername="
+				+ foundername + "]";
 	}
 
 }

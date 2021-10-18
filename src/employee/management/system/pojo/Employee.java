@@ -1,4 +1,4 @@
-package employee.management.system.pojo;
+ package employee.management.system.pojo;
 
 import java.util.UUID;
 
@@ -14,9 +14,9 @@ public class Employee extends Person {
 	private String locationOfCompany;
 	private int employeeId;
 
-	public Employee(String name, int age, UUID adharId, Address address, BloodGroup bloodgroup, Gender gender,
-			int salary, String designation, String department, int dateOfJoining, int leaves, String locationOfCompany,
-			int employeeId) {
+	public Employee(Company company, String name, int age, UUID adharId, Address address, BloodGroup bloodgroup,
+			Gender gender, int salary, String designation, String department, int dateOfJoining, int leaves,
+			String locationOfCompany, int employeeId) {
 
 		super(name, age, adharId, address, bloodgroup, gender);
 
@@ -26,14 +26,8 @@ public class Employee extends Person {
 		this.dateOfJoining = dateOfJoining;
 		this.leaves = leaves;
 		this.locationOfCompany = locationOfCompany;
-		this.employeeId = employeeId;
+		this.employeeId = employeeId; 
 
-	}
-
-	public String toString() {
-		return "Employee [salary=" + salary + ", designation=" + designation + ", department=" + department
-				+ ", dateOfJoining=" + dateOfJoining + ", leaves=" + leaves + ", locationOfCompany=" + locationOfCompany
-				+ ", employeeId=" + employeeId + "]";
 	}
 
 	public void setSalary(int salary) {
@@ -48,7 +42,7 @@ public class Employee extends Person {
 	public void setDesignation(String designation) {
 		this.designation = designation;
 	}
-
+ 
 	public String getDesignation() {
 		return designation;
 	}
@@ -94,6 +88,12 @@ public class Employee extends Person {
 	public int getEmployeeId() {
 		return employeeId;
 
+	}
+
+	public String toString() {
+		return "Employee [salary=" + salary + ", designation=" + designation + ", department=" + department
+				+ ", dateOfJoining=" + dateOfJoining + ", leaves=" + leaves + ", locationOfCompany=" + locationOfCompany
+				+ ", employeeId=" + employeeId + "]";
 	}
 
 }
